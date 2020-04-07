@@ -29,6 +29,7 @@ module.exports = (pool) => {
       res.send(data);
     } catch (e) {
       console.error(e);
+      res.status(500).send("Error!");
     }
   });
 
@@ -40,6 +41,7 @@ module.exports = (pool) => {
       res.send(data);
     } catch (e) {
       console.error(e);
+      res.status(500).send("Error!");
     }
   });
 
